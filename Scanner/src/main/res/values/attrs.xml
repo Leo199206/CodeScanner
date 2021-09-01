@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="scan_frame_view">
+        <attr name="scan_frame_bg_color" format="reference" />
+        <attr name="scan_frame_width" format="dimension" />
+        <attr name="scan_frame_height" format="dimension" />
+        <attr name="scan_frame_top_distance" format="dimension" />
+        <attr name="scan_frame_corner_color" format="color" />
+        <attr name="scan_frame_corner_line_breadth" format="dimension" />
+        <attr name="scan_frame_corner_line_extent" format="dimension" />
+        <attr name="scan_frame_corner_radius" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="scan_camera_view">
+        <attr name="scan_code_type" format="integer">
+            <enum name="QR" value="1" />
+            <enum name="BAR" value="2" />
+            <enum name="ALL" value="3" />
+            <enum name="CUSTOM" value="4" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="scan_line_view">
+        <attr name="scan_line_color" format="color" />
+        <attr name="scan_line_width" format="dimension" />
+        <attr name="scan_orientation" format="enum">
+            <enum name="VERTICAL" value="0"></enum>
+            <enum name="HORIZONTAL" value="1"></enum>
+        </attr>
+        <attr name="scan_width" format="dimension" />
+        <attr name="scan_height" format="dimension" />
+    </declare-styleable>
+
+</resources>

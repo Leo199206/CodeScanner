@@ -1,0 +1,4 @@
+/build
+/jni-code/libs
+/jni-code/jni/libiconv-1.15/*
+/jni-code/obj/

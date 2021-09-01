@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.scanner.sample.ScannerActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.code.scanner.view.ScanCameraView
+            android:id="@+id/scan_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.code.scanner.view.ScanFrameView
+            android:id="@+id/scan_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            app:scan_frame_bg_color="@color/black_translucent"
+            app:scan_frame_corner_color="@color/teal_200"
+            app:scan_frame_corner_line_breadth="3dp"
+            app:scan_frame_corner_line_extent="15dp"
+            app:scan_frame_height="266dp"
+            app:scan_frame_top_distance="200dp"
+            app:scan_frame_width="266dp" />
+
+        <com.code.scanner.view.ScanLineView
+            android:id="@+id/line_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:scan_height="266dp"
+            app:scan_line_color="@color/teal_200"
+            app:scan_width="266dp" />
+
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="600dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/shape_oval"
+            android:onClick="@{()->data.actionGallery()}"
+            android:padding="10dp"
+            android:src="@drawable/ic_album"
+            app:layout_constraintRight_toLeftOf="@id/space"
+            app:layout_constraintTop_toBottomOf="@id/space" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/shape_oval"
+            android:onClick="@{()->data.actionSwitchTorch()}"
+            android:padding="10dp"
+            android:src='@{data.isTorchOn?@drawable/ic_flashlight_on:@drawable/ic_flashlight_off}'
+            app:layout_constraintLeft_toRightOf="@id/space"
+            app:layout_constraintTop_toBottomOf="@id/space" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@{data.modeTitle}"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="@{()->data.actionFinish()}"
+            android:src="@drawable/ic_close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
