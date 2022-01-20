@@ -20,8 +20,7 @@ allprojects {
 + 添加以下maven依赖配置到app模块，gradle文件下
 
 ```
-implementation  'com.github.Leo199206:Scanner:1.0.0'
-implementation  'com.github.Leo199206:Zbar:1.0.0'
+com.github.Leo199206.CodeScanner:Scanner:1.0.0
 ```
 
 #### 添加到布局
