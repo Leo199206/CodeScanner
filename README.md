@@ -3,7 +3,7 @@
 
 #### 效果预览
 
-<img src="https://github.com/Leo199206/CodeScaner/blob/main/1642646855874575.gif?raw=true" width="300" heght="500" align=center />
+<img src="https://github.com/Leo199206/CodeScanner/blob/main/1642646855874575.gif?raw=true" width="300" heght="500" align=center />
 
 #### 依赖
 
@@ -82,7 +82,7 @@ binding.scanCamera
 
 + 使用过程中，如有问题或者建议，欢迎提出issue
 + 如遇issue解决不了的问题，可以邮件联系：850884963@qq.com
-+ 开源维护不易，如果该库对你有帮助，请动动你的小手指，给个star
++ 如果该库对你有帮助，请动动你的小手指，给个star
 
 #### LICENSE
 
