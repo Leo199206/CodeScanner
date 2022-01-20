@@ -109,6 +109,7 @@ class ScannerActivity : AppCompatActivity() {
                 ToastUtils.showLong("扫码结果：${it}")
             }
             .subscribe(Functions.emptyConsumer(), Functions.ERROR_CONSUMER)
+
     }
 
 

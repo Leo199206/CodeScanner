@@ -1,5 +1,9 @@
 apply plugin:'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 apply from: "${rootProject.projectDir}/config.gradle"
+
+group='com.github.Leo199206'
+version = "1.0.0"
 dependencies {
     api "com.otaliastudios:cameraview:2.7.1"
     implementation 'io.reactivex.rxjava3:rxjava:3.0.13'
