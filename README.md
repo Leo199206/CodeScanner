@@ -86,6 +86,6 @@ binding.scanCamera
 
 #### LICENSE
 
-SlideUnlock is under the Apache License Version 2.0. See
+CodeScanner is under the Apache License Version 2.0. See
 the [LICENSE](https://raw.githubusercontent.com/Leo199206/CodeScaner/main/LICENSE) file for
 details.
